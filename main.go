@@ -6,12 +6,11 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/andrewostroumov/lifecycle"
 	"github.com/knadh/koanf/providers/env"
 	"github.com/knadh/koanf/v2"
 	"github.com/subosito/gotenv"
 	"go.uber.org/zap"
-
-	"github.com/andrewostroumov/lifecycle"
 
 	"github.com/andrewostroumov/grpc-greeter/internal/app"
 	grpcserver "github.com/andrewostroumov/grpc-greeter/internal/pkg/server/grpc"
