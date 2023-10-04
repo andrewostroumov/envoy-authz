@@ -7,4 +7,4 @@ docker-build:
 ## docker run:                 run docker image
 docker-run:
 	@make docker-build
-	@docker run --rm --name envoy-authz -p 9001:9001 --network local -e GRPC_SERVER_ADDR=:9001 envoy-authz:build
+	@docker run --rm --name envoy-authz -p 9090:9090 --network local -e GRPC_SERVER_ADDR=:9090 envoy-authz:build
